@@ -28,16 +28,16 @@ if (process.env.NODE_ENV !== 'production') {
 
 function check(level){
     switch(level) {
-        case info: logger.info('this is info');break;
-        case warn: logger.warn('this is warn');break;
-        case error: logger.error('this is error');break;
-        case http: logger.http('this is http');break;
-        case verbose: logger.verbose('this is verbose');break;
-        case debug: logger.debug('this is debug');break;
-        case silly: logger.silly('this is silly');
+        case "info": logger.info('this is info');break;
+        case "warn": logger.warn('this is warn');break;
+        case "error": logger.error('this is error');break;
+        case "http": logger.http('this is http');break;
+        case "verbose": logger.verbose('this is verbose');break;
+        case "debug": logger.debug('this is debug');break;
+        case "silly": logger.silly('this is silly');
     };
 }
 
-check(info);
-check(warn);
-check(error);
+check("info");
+check("warn");
+check("error");
